@@ -33,9 +33,9 @@ TEST(checkOnDestroy,neg){
                      { 0, 1, 0, 1, 0, 1, 0, 1} };
     ASSERT_EQ(checkOnDestroy(0,1,gB),1);
     ASSERT_EQ(checkOnDestroy(2,4,gB),1);
-    ASSERT_EQ(checkOnDestroy(-30,3,gB),1);
+    ASSERT_EQ(checkOnDestroy(1,6,gB),1);
     ASSERT_EQ(checkOnDestroy(3,4,gB),1);
-    ASSERT_EQ(checkOnDestroy(9,5,gB),1);
+    ASSERT_EQ(checkOnDestroy(6,5,gB),1);
 }
 
 #endif
