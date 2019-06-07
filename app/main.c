@@ -1,5 +1,4 @@
 #include "function.h"
-#include <stdio.h>
 int main()
 {
     int gameBoard[8][8] = {{-1, 0,-1, 0,-1, 0,-1, 0},
