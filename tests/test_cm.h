@@ -97,7 +97,7 @@ TEST(checkMove,t5){
 
 }
 
-TEST(checkMove,t3){
+TEST(checkMove,t4){
 
     int gb[8][8] = {
 
