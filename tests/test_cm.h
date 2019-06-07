@@ -67,4 +67,33 @@ TEST(checkMove,t3){
     ASSERT_EQ(gb[6][1],0);
 
 }
+
+TEST(checkMove,t5){
+
+    int gb[8][8] = {
+
+                    {-1, 0, 2, 0, 0, 0, 0, 0},
+
+                    { 0, 0, 0, 0,-1, 0, 0, 0},
+
+                    { 0, 0, 0, 0, 0, 0, 1, 0},
+
+                    { 0, 0, 0, 0, 0, 1, 0, 0},
+
+                    { 0, 0, 0,-2, 0, 0, 0, 0},
+
+                    { 0, 0, 0, 0, 0, 0, 0,-2},
+
+                    { 0,-1, 0,-1, 0, 0, 0, 0},
+
+                    {-2, 0, 1, 0, 0, 0, 0, 0}
+
+                   };
+
+    ASSERT_EQ(checkMove(3,4,1,2,gb),1);
+    ASSERT_EQ(checkMove(3,4,5,2,gb),1);
+    ASSERT_EQ(checkMove(3,4,5,6,gb),1);
+    ASSERT_EQ(checkMove(3,4,1,6,gb),1);
+
+}
 #endif // TEST_CM_H
