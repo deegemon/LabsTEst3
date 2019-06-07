@@ -81,7 +81,7 @@ int checkMove(int  oldX, int  oldY, int  newX, int  newY, int board[8][8]){
                 return 1;
             } else return 0;
         }
-        else if((board[oldY-1][oldX-1] != 0 && board[oldY-1][oldX-1] != board[oldY][oldX])){
+        else if(board[oldY-1][oldX-1] != 0 && board[oldY-1][oldX-1] != board[oldY][oldX]){
             if(newX == (oldX - 2) && newY == (oldY - 2)){
                 board[oldY - 1][oldX - 1] = 0;
 
@@ -107,7 +107,7 @@ int checkMove(int  oldX, int  oldY, int  newX, int  newY, int board[8][8]){
 
         }
 
-        else if((board[oldY+1][oldX-1] != 0 && board[oldY+1][oldX-1] != board[oldY][oldX])){
+        else if(board[oldY+1][oldX-1] != 0 && board[oldY+1][oldX-1] != board[oldY][oldX]){
             if(newX == (oldX - 2) && newY == (oldY + 2)){
                 board[oldY + 1][oldX - 1] = 0;
 
@@ -122,7 +122,7 @@ int checkMove(int  oldX, int  oldY, int  newX, int  newY, int board[8][8]){
                 return 1;
             else return 0;
         }
-        else if((board[oldY-1][oldX+1] != 0 && board[oldY-1][oldX+1] != board[oldY][oldX])){
+        else if(board[oldY-1][oldX+1] != 0 && board[oldY-1][oldX+1] != board[oldY][oldX]){
             if(newX == (oldX + 2) && newY == (oldY - 2)){
                 board[oldY - 1][oldX + 1] = 0;
                 return 1;
@@ -136,7 +136,7 @@ int checkMove(int  oldX, int  oldY, int  newX, int  newY, int board[8][8]){
                 return 1;
             else return 0;
         }
-        else if((board[oldY+1][oldX+1] != 0 && board[oldY+1][oldX+1] != board[oldY][oldX])){
+        else if(board[oldY+1][oldX+1] != 0 && board[oldY+1][oldX+1] != board[oldY][oldX]){
             if(newX == (oldX + 2) && newY == (oldY + 2)){
                 board[oldY + 1][oldX + 1] = 0;
                 return 1;
