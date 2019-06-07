@@ -41,7 +41,7 @@ TEST(checkMove,neg){
 }
 
 
-TEST(checkMove,neg){
+TEST(checkMove,t3){
 
     int gb[8][8] = {
 
